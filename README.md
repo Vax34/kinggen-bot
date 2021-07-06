@@ -23,7 +23,7 @@ To generate an account type !generate Amount of accounts "max 40 watch out for r
 
 
 
-## Usage
+## Help
 If you have an issue create one on GitHub or on our discord server [discord](https://kinggen.info/discord/join/).
 
 
