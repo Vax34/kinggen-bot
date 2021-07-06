@@ -21,7 +21,7 @@ bot.remove_command('help')
 
 @bot.command(name="help")
 async def helpmenu(ctx):
-    desc = "!generate - Generates an account using your api key\n!history (optional: date, format: mm/dd)"
+    desc = "!generate (amount) - Generates a number of accounts using your api key (default amount: 1)\n!history (optional: date, format: mm/dd)"
     embed = discord.Embed(title="Help Menu", description=desc)
     await ctx.send(embed=embed)
 
