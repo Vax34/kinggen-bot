@@ -61,7 +61,7 @@ async def send_history(ctx, date=datetime.datetime.now().strftime("%m/%d")):
 async def generate(ctx, amount=1):  # please dont activate this command twice at the same time or it might break thx
     altlist = []
     for alt in range(amount):
-        response = httpx.get("https://kinggen.info/api/v2/alt", params=params)
+        response = httpx.get("https://kinggen.wtf/api/v2/alt", params=params)
         contents = json.loads(str(response.text))
         if response.status_code != 200:
             embed = discord.Embed(title="An error occured", description=contents['message'])
